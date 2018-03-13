@@ -1,0 +1,272 @@
+/* CSS for Live Comments */
+
+/* container for live comments */
+#lc {
+  margin:0;
+  padding:0px 12px 2px 12px;
+  width:400px; /* change this width to change app's width */
+  font-family: 'Lucidia Grande', Verdana, Arial, Sans-Serif;
+  color:#001650;
+}
+
+/* general settings for form fields */ 
+#lc input, #lc textarea {
+  margin:0;
+  padding:0;
+  cursor:pointer;
+  color:#001650;
+}
+
+/* Live Comments title and version*/
+#lc #titleCap {
+  color:#5066a0;
+}
+
+#lc #titleCap #title {
+  padding:0 0 8px 0;
+  font-size:large;
+  letter-spacing:6px;
+  font-weight:bold;
+}
+
+/* Live Comments version */
+#lc #titleCap #version {
+  padding:0 0 0 8px;
+  vertical-align:top;
+  font-size:xx-small;
+}
+
+/* form field captions */
+#lc .cap {
+  padding:8px 0 0 0;
+  font-size:x-small;
+}
+
+/* name form input field out of focus (i.e. onblur) */
+#lc .name {
+  padding:1px;
+  width:143px;
+  height:12px;
+  font-size:x-small;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#5066a0;
+  background-color:transparent;
+}
+
+/* name form input field in focus (i.e. onfocus) */
+#lc .namef {
+  padding:1px;
+  width:143px;
+  height:12px;
+  font-size:x-small;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#d28a2c;
+  background-color:#ffffff;
+}
+
+/* email form input field out of focus */
+#lc .email {
+  padding:1px;
+  width:225px;
+  height:12px;
+  font-size:x-small;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#5066a0;
+  background-color:transparent;
+}
+
+/* email form input field in focus */
+#lc .emailf {
+  padding:1px;
+  width:225px;
+  height:12px;
+  font-size:x-small;
+  border-width:0 0 1px 0;
+  border-style:solid;
+  border-color:#d28a2c;
+  background-color:#ffffff;
+}
+
+/* comment form textarea out of focus */
+#lc .ctext {
+  margin:4px 0 4px 0;
+  padding:1px;
+  width:100%;
+  height:65px;
+  font-size:x-small;
+  border-width:1px;
+  border-style:solid;
+  border-color:#5066a0;
+  background-color:#c5ee62;
+  background-color:transparent;
+}
+
+/* comment form textarea in focus */
+#lc .ctextf {
+  margin:4px 0 4px 0;
+  padding:1px;
+  width:100%;
+  height:65px;
+  font-size:x-small;
+  border-width:1px;
+  border-style:solid;
+  border-color:#d28a2c;
+  background-color:#ffffff;
+}
+
+/* counter text below comment textarea */
+#lc #counter {
+  margin:0 0 0 0;
+  font-size:x-small;
+}
+
+#lc #count {
+  padding:0 0 2px 0;
+  width:30px;
+  font-size:x-small;
+  text-align:right;
+  border-width:0;
+  background-color:transparent;
+}
+
+/* submit link below comment textarea */
+#lc #submit {
+  margin:2px 2px 40px 2px;
+  text-align:right;
+  font-size:x-small;
+  cursor:pointer;
+}
+
+/* active users */
+#lc #users {
+  margin:0 0 2px 0;
+  width:100%;
+  font-size:x-small;
+  letter-spacing:2px;
+}
+
+/* entries -- where user comments are displayed */
+#lc #entries {
+  padding:12px 2px 2px 2px;
+  width:100%;
+  font-size:medium;
+  overflow:hidden;
+  color:#5066a0;
+  border-width:3px 0 0 0;
+  border-style:solid;
+  border-color:#5066a0;
+}
+
+/* more and less icons */
+#lc #entries img {
+  width:14px;
+  height:9px;
+  border:0px;
+}
+
+/* comment */
+#lc #entries .para {
+  margin:0 3px 0 0;
+  padding:0 0 36px 0;
+  border-width:1px 0 0 0;
+  border-style:dashed;
+  border-color:#5066a0;
+}
+
+/* the by line, including auth and date */
+#lc #entries .by {
+  margin:0 3px 0 0;
+  font-family: arial;
+}
+
+/* who wrote the comment */
+#lc #entries .auth {
+  margin:0 4px 0 0;
+  color:#d28a2c;
+}
+
+/* comment date listed with author */
+#lc #entries .date {
+}
+
+/* email line if present */
+#lc #entries .eml {
+  margin:0 3px 2px 0;
+}
+
+
+/* general css for comments */
+
+#lc a {
+  cursor:pointer;
+  color:#5066a0;
+  border-width:0;
+}
+
+#lc a:hover {
+  cursor:pointer;
+  color:#d28a2c;
+}
+
+#lc a:visited {
+  cursor:pointer;
+}
+
+#lc .pointer { 
+  cursor:pointer;
+}
+
+#lc .small { 
+  font-size:small;
+}
+
+#lc .x-small { 
+  font-size:x-small;
+}
+
+#lc .xx-small { 
+  font-size:xx-small;
+}
+
+#lc .medium { 
+  font-size:medium;
+}
+
+#lc .large { 
+  font-size:large;
+}
+
+#lc .x-large { 
+  font-size:x-large;
+}
+
+#lc .xx-large { 
+  font-size:xx-large;
+}
+
+#lc .graycol {
+  color:#bebebe;
+}
+
+#lc .darkgraycol {
+  color:#666666;
+}
+
+#lc .hlc {
+  color:#d28a2c;
+}
+
+#lc .invisible {
+  display:none;
+  visibility:hidden;
+}
+
+#lc .visible {
+  display:inline;
+  visibility:visible;
+}
+                
+            

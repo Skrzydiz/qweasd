@@ -1,0 +1,136 @@
+                
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>Gmail dot Net: AJAX Example</title>
+        <!-- Changed by: Jerry Anders, 11-Feb-2006 -->
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <meta name="description" content="Live Comments: An example AJAX application by Jerry Anders">
+        <meta name="keywords" content="Jerry Anders, live comments, comments, css, javascript, xhtml, xml, ajax, ajax application, web-based">
+        <link rel="stylesheet" href="Css/Example.css"></link>
+        <link rel="stylesheet" href="Css/Comments.css"></link>
+        <script type="text/javascript" src="Js/comments.js"></script>
+    </head>
+    <script>
+        // Disable comments so that they do not work on this page.
+        // To do so we need to override getComments and submitComments
+        // which are helper functions defined in comments.js.
+
+        // To use this file as a template file for your own 
+        // application, remove this <script ... /script> 
+        // section from this page.
+
+        function getComments()
+        {
+            document.getElementById("entries").innerHTML = "Comments are disabled on this page.";
+        }
+        function submitComment()
+        {
+            // do nothing
+        }
+    </script>
+
+    <body onload="initComments()">
+        <!-- Since this is using the same css as gmail.net, I 
+             need to override page width as set in WebSite.css
+             to get 3 columns to fit in the page.
+        -->
+        <div id="page" style="width:812px"> 
+
+            <div class="b hlcol x-large ls5">EXAMPLE</div>
+
+            <!-- left column -->
+            <div id="left">
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">FAQ:</div>
+                    <br>
+                    <b>Q:</b> Can I use this as a template for my site?
+                    <br>
+                    <b>A:</b> Yes.
+                    <br><br><br>
+
+                    <b>Q:</b> Does this application work for all browsers?
+                    <br>
+                    <b>A:</b> It does for all modern browsers.
+                    <br><br><br>
+
+                    <b>Q:</b> Where do I get the software?
+                    <br>
+                    <b>A:</b> <a href="http://www.gmail.net/GetSource.php">Live Comments</a>.
+                    <br><br><br>
+
+                    <b>Q:</b> Do I need anything else?
+                    <br>
+                    <b>A:</b> No, but if you want to use this example
+                    file you will need 
+                    <a href="http://www.gmail.net/Css/Example.css">Example.css</a>.
+                    This Css file is not published on Live Comments
+                    Source page but is required for Example.html's
+                    layout.
+
+                </div>
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">LEFT 2:</div>
+                    <br>
+                    Add your text here to create another column entry.
+                </div>
+
+            </div>
+
+            <!-- center column -->
+            <div id="center">
+                <div class="sb">
+                    <!-- comments application populates this div -->
+                    <div id="comments" class="invisible">
+                        <!-- this gets replaced by live comments for browsers that support xmlhttprequest -->
+                        <div>If you see this, your Browser is old! Upgrade to a new browser that supports XMLHttpRequest.</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- right column -->
+            <div id="right">
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">RIGHT 1:</div>
+                    <br>
+                    Add your text here to create another column entry.
+                    <br>
+                    Add your text here to create another column entry.
+                    <br>
+                    Add your text here to create another column entry.
+                </div>
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">RIGHT 2:</div>
+                    <br>
+                    Add your text here to create another column entry.
+                </div>
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">RIGHT 3:</div>
+                    <br>
+                    Add your text here to create another column entry.
+                </div>
+
+                <div class="sb">
+                    <div class="b hlcol small ls3">RIGHT 4:</div>
+                    <br>
+                    Add your text here to create another column entry.
+                </div>
+
+            </div>
+
+            <!-- bottom -->
+            <div style="clear:both"></div>
+            <div id="footer">
+                <span class="darkgraycol">Copyright &copy; 2002-2006 Your Name Here. All rights reserved.</span>
+            </div>
+
+        </div>
+    </body>
+</html>
+                
+            
